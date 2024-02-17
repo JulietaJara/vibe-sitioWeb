@@ -1,3 +1,11 @@
+.container{
+    background-color: rgb(143, 176, 247);
+    min-height: 100vh;
+}
 .title { 
     font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
