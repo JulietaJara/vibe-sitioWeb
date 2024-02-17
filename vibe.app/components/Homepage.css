@@ -1,6 +1,7 @@
 .container{
-    background-color: rgb(143, 176, 247);
+    background-color: #99b8fa;
     min-height: 100vh;
+    height: 100vh;
 }
 .title { 
     font-weight: bold;
