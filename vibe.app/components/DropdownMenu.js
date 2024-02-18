@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Modal, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, StyleSheet, Image } from 'react-native';
 
 const DropdownMenu = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -11,7 +11,10 @@ const DropdownMenu = () => {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={toggleModal}>
-          <Text style={styles.buttonText}>Mostrar Menú</Text>
+        <Image
+          source={require('../images/icons8-menú-48.png')} 
+          style={styles.buttonImage}
+        />
         </TouchableOpacity>
   
         <Modal
@@ -22,9 +25,9 @@ const DropdownMenu = () => {
         >
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
-              <Text>Opción 1</Text>
-              <Text>Opción 2</Text>
-              <Text>Opción 3</Text>
+              <Text>Productos</Text>
+              <Text>Inicio</Text>
+              <Text>Contacto</Text>
               <TouchableOpacity onPress={toggleModal}>
                 <Text style={styles.closeButton}>Cerrar</Text>
               </TouchableOpacity>

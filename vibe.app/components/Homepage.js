@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Image, StyleSheet, View } from 'react-native';
-import DropdownMenu from './DropdownMenu';
+import DropdownMenu from '../components/DropdownMenu';
 
 const Homepage = () => {
     return (
