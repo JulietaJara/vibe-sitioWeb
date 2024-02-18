@@ -1,11 +1,12 @@
-import './Homepage.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Image, StyleSheet, View } from 'react-native';
+import DropdownMenu from './DropdownMenu';
 
 const Homepage = () => {
     return (
         <View style={styles.container}>
         <Image source={require('../images/logo_vibe.png')} style={styles.imagenDeFondo} />
+        <DropdownMenu />
     </View>
     )
 }
@@ -15,12 +16,12 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'center',
-        marginTop: 50, // Ajusta la distancia desde la parte superior según tus necesidades
+        marginTop: 50, 
     },
     imagenDeFondo: {
-      width: 200, // Ajusta el ancho según tus necesidades
-      height: 200, // Ajusta la altura según tus necesidades
-      resizeMode: 'contain', // Ajusta según tus necesidades
+      width: 200, 
+      height: 200, 
+      resizeMode: 'contain', 
     },
   });
 
