@@ -1,13 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Image, StyleSheet, View } from 'react-native';
-import DropdownMenu from '../components/DropdownMenu';
 
 const Homepage = () => {
   return (
       <View style={styles.container}>
-        <View style={styles.dropdownContainer}>
-              <DropdownMenu />
-          </View>
           <View style={styles.logoContainer}>
               <Image source={require('../images/logo_vibe.png')} style={styles.imagenLogo} />
           </View>
