@@ -3,7 +3,6 @@ import { Image, StyleSheet, View, TouchableHighlight, Text, Linking } from 'reac
 
 const Contacto = () => {
   const handleWhatsAppPress = async () => {
-    const phoneNumber = '541561863395';
     const whatsappLink = "https://wa.me/541561863395";
 
     const canOpenWhatsApp = await Linking.canOpenURL(whatsappLink);
@@ -43,7 +42,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   whatsappLink: {
-    color: '#0074cc',
+    color: '#00da60',
     textDecorationLine: 'underline',
     fontWeight: 'bold',
   },
