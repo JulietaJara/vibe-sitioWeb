@@ -18,7 +18,7 @@ export default function App() {
         <ReactNavigationDrawer.Screen name="Inicio" component={Homepage} />
         <ReactNavigationDrawer.Screen name="Productos" component={Producto} />
         <ReactNavigationDrawer.Screen name="Contacto" component={Contacto} />
-        <ReactNavigationDrawer.Screen name="+ Información" component={Informacion}/>
+        <ReactNavigationDrawer.Screen name="Terminos y condiciones" component={Informacion}/>
 
       </ReactNavigationDrawer.Navigator>
     </NavigationContainer>
