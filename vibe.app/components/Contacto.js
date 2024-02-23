@@ -19,7 +19,7 @@ const Contacto = () => {
         <Image source={require('../images/logo_vibe.png')} style={styles.imagenLogo} />
       </View >
       <View style={styles.whatsappLinkContainer}>
-      <TouchableHighlight onPress={handleWhatsAppPress}>
+      <TouchableHighlight style={styles.button} onPress={handleWhatsAppPress}>
         <Text style={styles.whatsappLink}>Enviar mensaje por WhatsApp</Text>
       </TouchableHighlight>
       </View>
@@ -32,6 +32,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
+  },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 50,
+    elevation: 3,
+    backgroundColor: '#128c7e',
   },
   dropdownContainer: {},
   logoContainer: {
@@ -50,8 +59,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   whatsappLink: {
-    color: '#00da60',
-    textDecorationLine: 'underline',
+    color: 'white',
     fontWeight: 'bold',
   },
 });
