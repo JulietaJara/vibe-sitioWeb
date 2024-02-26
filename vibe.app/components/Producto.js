@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Image, StyleSheet, View } from 'react-native';
+import Carousel from './Carousel'
 
 const Producto = () => {
   return (
@@ -7,6 +8,7 @@ const Producto = () => {
           <View style={styles.logoContainer}>
               <Image source={require('../images/logo_vibe.png')} style={styles.imagenLogo} />
           </View>
+          <Carousel />
       </View>
   );
 };
