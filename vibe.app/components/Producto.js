@@ -18,8 +18,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',     
   },
-  dropdownContainer: {  
-  },
   logoContainer:{
     flex: 1,
     justifyContent: 'flex-start',
