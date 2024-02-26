@@ -7,15 +7,13 @@ import Producto from './components/Producto';
 import Contacto from './components/Contacto';
 import Informacion from './components/Informacion';
 
-
-
 const ReactNavigationDrawer = createDrawerNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <ReactNavigationDrawer.Navigator initialRouteName="Home">
-        <ReactNavigationDrawer.Screen name="Inicio" component={Homepage} />
+      <ReactNavigationDrawer.Navigator initialRouteName="Home" >
+        <ReactNavigationDrawer.Screen name="Inicio" component={Homepage}/>
         <ReactNavigationDrawer.Screen name="Productos" component={Producto} />
         <ReactNavigationDrawer.Screen name="Contacto" component={Contacto} />
         <ReactNavigationDrawer.Screen name="Terminos y condiciones" component={Informacion}/>
