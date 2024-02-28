@@ -31,17 +31,12 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
   },
-  imagenLogo: {
-    width: 200,
-    height: 200,
-    resizeMode: 'contain',
-  },
   textoDebajo: {
     textAlign: 'justify',
     fontSize: 16,
     lineHeight: 24,
     color: '#333',
-    margin: 40
+    margin: 20
   },
   destacado: {
     fontWeight: 'bold',

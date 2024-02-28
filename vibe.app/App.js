@@ -11,8 +11,8 @@ import Informacion from './components/Informacion';
 
 const styles = StyleSheet.create({
   headerImage: {
-    width: 100,
-    height: 50,
+    width: 200,
+    height: 200,
     resizeMode: 'contain',
   },
 });
@@ -23,7 +23,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <ReactNavigationDrawer.Navigator initialRouteName="Home" screenOptions={{
-
+        headerStyle: {
+          height: 200, 
+        },
 
         headerTitleAlign: 'center',
         headerTitle: () => (

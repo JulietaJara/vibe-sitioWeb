@@ -38,17 +38,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     elevation: 3,
     backgroundColor: '#128c7e',
-  },
-  dropdownContainer: {},
-  logoContainer: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-  },
-  imagenLogo: {
-    width: 200,
-    height: 200,
-    resizeMode: 'contain',
+    margin: 20
   },
   whatsappLinkContainer: {
     flex: 1,
