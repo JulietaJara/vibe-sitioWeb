@@ -3,17 +3,28 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 import Swiper from 'react-native-swiper';
 
 const Carousel = () => {
-  
+  const slides = [
+    { id: 1, text: 'Slide 1', image: require('../images/mate1.png') },
+    { id: 2, text: 'Slide 2', image: require('../images/taza1.png') },
+    { id: 3, text: 'Slide 3', image: require('../images/jabonera1.png') },
+  ];
+
   return (
-    <Swiper index={0} loop={false} showsPagination>
-      <Image
-      source={require('../images/logo_vibe.png')} resizeMode='center'/>
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Slide 2</Text>
-      </View>
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Slide 3</Text>
-      </View>
+    <Swiper
+      index={0}
+      loop={false}
+      showsPagination
+      dot={<View style={styles.paginationDot} />}
+      activeDot={<View style={[styles.paginationDot, styles.activeDot]} />}
+    >
+      {slides.map((slide) => (
+        <View key={slide.id} style={styles.slide}>
+          {slide.image && (
+            <Image source={slide.image} style={styles.image} resizeMode="contain" />
+          )}
+          <Text>{slide.text}</Text>
+        </View>
+      ))}
     </Swiper>
   );
 };
@@ -24,11 +35,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  paginationContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
+  image: {
+    width: '70%', 
+    height: '70%', 
   },
   paginationDot: {
     width: 8,
@@ -39,9 +48,6 @@ const styles = StyleSheet.create({
   },
   activeDot: {
     backgroundColor: 'blue', // Cambia esto al color que desees para el punto activo
-  },
-  inactiveDot: {
-    backgroundColor: 'gray', // Cambia esto al color que desees para los puntos inactivos
   },
 });
 
