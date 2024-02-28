@@ -15,9 +15,6 @@ const Contacto = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.logoContainer}>
-        <Image source={require('../images/logo_vibe.png')} style={styles.imagenLogo} />
-      </View >
       <View style={styles.whatsappLinkContainer}>
       <TouchableHighlight style={styles.button} onPress={handleWhatsAppPress}>
         <Text style={styles.whatsappLink}>Enviar mensaje por WhatsApp</Text>

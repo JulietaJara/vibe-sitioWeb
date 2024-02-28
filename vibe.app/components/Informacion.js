@@ -5,7 +5,6 @@ const Informacion = () => {
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
-        <Image source={require('../images/logo_vibe.png')} style={styles.imagenLogo} />
         <Text style={styles.textoDebajo}>
           <Text style={styles.destacado}>Nuestras piezas se piden con 30 días de antelación,</Text>
           {' '}

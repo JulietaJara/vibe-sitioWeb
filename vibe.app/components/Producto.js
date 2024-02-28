@@ -5,9 +5,6 @@ import Carousel from './Carousel'
 const Producto = () => {
   return (
       <View style={styles.container}>
-          <View style={styles.logoContainer}>
-              <Image source={require('../images/logo_vibe.png')} style={styles.imagenLogo} />
-          </View>
           <Carousel />
       </View>
   );
