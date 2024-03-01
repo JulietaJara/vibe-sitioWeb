@@ -7,7 +7,6 @@ const CarouselProducts = () => {
     { id: 1, text: 'Slide 1', image: require('../images/mate1.png') },
     { id: 2, text: 'Slide 2', image: require('../images/taza1.png') },
     { id: 3, text: 'Slide 3', image: require('../images/jabonera1.png') },
-    { id: 4, text: 'Slide 4', image: require('../images/jabonera1.png') },
   ];
 
   const itemWidth = Dimensions.get('window').width; // Ancho del item
@@ -41,8 +40,10 @@ const styles = StyleSheet.create({
   wrapper: {},
   slide: {
     flex: 1,
+    flexDirection: 'row',
+    
     justifyContent: 'center',
-    alignItems: 'center',
+    //alignItems: 'center',
   },
   imageContainer: {
     flex: 1,
