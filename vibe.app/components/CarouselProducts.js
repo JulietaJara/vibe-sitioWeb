@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import Swiper from 'react-native-swiper';
 
-const Carousel = () => {
+const CarouselProducts = () => {
   const slides = [
     { id: 1, text: 'Slide 1', image: require('../images/mate1.png') },
     { id: 2, text: 'Slide 2', image: require('../images/taza1.png') },
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Carousel;
+export default CarouselProducts;

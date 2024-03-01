@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Image, StyleSheet, View } from 'react-native';
-import Carousel from './Carousel'
+import CarouselProducts from './CarouselProducts'
 
 const Producto = () => {
   return (
       <View style={styles.container}>
-          <Carousel />
+          <CarouselProducts />
       </View>
   );
 };
