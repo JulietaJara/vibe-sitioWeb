@@ -9,7 +9,7 @@ const CarouselProducts = () => {
     { id: 3, text: 'Slide 3', image: require('../images/jabonera1.png') },
   ];
 
-  const itemWidth = Dimensions.get('window').width; // Ancho del item
+  const itemWidth = Dimensions.get('window').width; // Ancho de la pantalla
 
   return (
     <Swiper
@@ -21,7 +21,7 @@ const CarouselProducts = () => {
       activeDot={<View style={[styles.paginationDot, styles.activeDot]} />}
     >
       {[0, 1].map((index) => (
-        <View key={index} style={styles.slide}>
+        <View key={index} style={[styles.slide, { width: itemWidth }]}>
           {slides.slice(index * 4, (index + 1) * 4).map((slide) => (
             <View key={slide.id} style={styles.imageContainer}>
               {slide.image && (
@@ -41,19 +41,18 @@ const styles = StyleSheet.create({
   slide: {
     flex: 1,
     flexDirection: 'row',
-    
     justifyContent: 'center',
-    //alignItems: 'center',
   },
   imageContainer: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    width: '25%', // Ancho de cada imagen
+    margin: 6,
+    width: '5%', // Ancho de cada imagen
   },
   image: {
     width: '100%', 
-    height: '70%', 
+    //aspectRatio: 1, // Mantener la proporción de aspecto 1:1
+    height:'40%'
   },
   paginationDot: {
     width: 8,
