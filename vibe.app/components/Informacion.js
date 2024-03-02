@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
   },
   destacado: {
     fontWeight: 'bold',
-    color: '#2351a7'
+    color: '#2351a7',
+    marginTop: 6
   },
 });
 

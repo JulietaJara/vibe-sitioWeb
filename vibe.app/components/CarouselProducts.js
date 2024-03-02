@@ -7,6 +7,13 @@ const CarouselProducts = () => {
     { id: 1, text: 'Slide 1', image: require('../images/mate1.png') },
     { id: 2, text: 'Slide 2', image: require('../images/taza1.png') },
     { id: 3, text: 'Slide 3', image: require('../images/jabonera1.png') },
+    { id: 4, text: 'Slide 2', image: require('../images/taza2.png') },
+    { id: 5, text: 'Slide 2', image: require('../images/taza3.png') },
+    { id: 6, text: 'Slide 2', image: require('../images/taza4.png') },
+    { id: 7, text: 'Slide 2', image: require('../images/taza5.png') },
+    { id: 8, text: 'Slide 2', image: require('../images/taza6.png') },
+    { id: 9, text: 'Slide 2', image: require('../images/taza7.png') },
+    { id: 10, text: 'Slide 2', image: require('../images/taza8.png') },  
   ];
 
   const itemWidth = Dimensions.get('window').width; // Ancho de la pantalla
@@ -41,18 +48,15 @@ const styles = StyleSheet.create({
   slide: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center',
+    //justifyContent: 'center',
   },
   imageContainer: {
     flex: 1,
-    alignItems: 'center',
-    margin: 6,
-    width: '5%', // Ancho de cada imagen
+    alignItems: 'flex-start',
   },
   image: {
-    width: '100%', 
-    //aspectRatio: 1, // Mantener la proporción de aspecto 1:1
-    height:'40%'
+    width: '30%', 
+    height:'30%'
   },
   paginationDot: {
     width: 8,
