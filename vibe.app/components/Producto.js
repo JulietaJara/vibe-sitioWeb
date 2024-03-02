@@ -15,8 +15,8 @@ const Producto = () => {
 
 const styles = StyleSheet.create({
   carousel: {
-    flex: 1,
-    flexDirection: 'row',
+    //flex: 1,
+    //flexDirection: 'row',
   },
   title: {
     fontWeight: 'bold',

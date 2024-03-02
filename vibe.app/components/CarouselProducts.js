@@ -16,8 +16,8 @@ const CarouselProducts = () => {
     { id: 10, text: 'Slide 2', image: require('../images/taza8.png') },  
   ];
 
-  const itemWidth = Dimensions.get('window').width; // Ancho de la pantalla
-
+  const itemWidth = Dimensions.get('window').width; 
+  
   return (
     <Swiper
       style={styles.wrapper}
@@ -29,7 +29,7 @@ const CarouselProducts = () => {
     >
       {[0, 1].map((index) => (
         <View key={index} style={[styles.slide, { width: itemWidth }]}>
-          {slides.slice(index * 4, (index + 1) * 4).map((slide) => (
+          {slides.slice(index * 6, (index + 1) * 6).map((slide) => (
             <View key={slide.id} style={styles.imageContainer}>
               {slide.image && (
                 <Image source={slide.image} style={styles.image} resizeMode="contain" />
@@ -49,20 +49,21 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     //justifyContent: 'center',
+    
   },
   imageContainer: {
     flex: 1,
-    alignItems: 'flex-start',
+    alignItems: 'center',
   },
   image: {
-    width: '30%', 
-    height:'30%'
+    width: '96%', 
+    height: '96%',
   },
   paginationDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    marginHorizontal: 5,
+    //width: 8,
+    //height: 8,
+    //borderRadius: 4,
+    //marginHorizontal: 5,
     backgroundColor: 'gray', // Cambia esto al color que desees
   },
   activeDot: {
