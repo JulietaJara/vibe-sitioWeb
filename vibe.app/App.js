@@ -5,7 +5,7 @@ import "react-native-gesture-handler";
 import { Image, StyleSheet } from 'react-native';
 import { SimpleLineIcons } from '@expo/vector-icons';
 import Homepage from './components/Homepage';
-import Producto from './components/Producto';
+import Products from './components/Products';
 import Contacto from './components/Contacto';
 import Informacion from './components/Informacion';
 
@@ -57,7 +57,7 @@ export default function App() {
               <SimpleLineIcons name="tag" size={18} color="#808080" />
             )
           }}
-          component={Producto} />
+          component={Products} />
 
         <ReactNavigationDrawer.Screen
           name="Contacto"
