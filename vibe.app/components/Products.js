@@ -3,7 +3,7 @@ import { View, ScrollView, StyleSheet } from "react-native";
 import ProductCard from "./ProductCard";
 import productsDestacados from "../data/productsDestacados";
 
-const Homepage = () => {
+const Products = () => {
   return (
     <ScrollView>
     <View style={styles.container}>
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Homepage;
+export default Products;
