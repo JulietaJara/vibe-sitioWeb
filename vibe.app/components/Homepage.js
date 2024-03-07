@@ -1,33 +1,28 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import { Image, StyleSheet, View } from 'react-native';
+import React from "react";
+import { View, ScrollView, StyleSheet } from "react-native";
+import ProductCard from "./ProductCard";
+import productsDestacados from "../data/productsDestacados";
 
 const Homepage = () => {
   return (
-      <View style={styles.container}>
-          <View style={styles.logoContainer}>
-              <Image source={require('../images/logo_vibe.png')} style={styles.imagenLogo} />
-          </View>
-      </View>
+    <ScrollView>
+    <View style={styles.container}>
+      {productsDestacados.map((product) => (
+        <ProductCard key={product.id} product={product} onPress={() => console.log("Product pressed:", product.name)} />
+      ))}
+    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',     
-  },
-  dropdownContainer: {  
-  },
-  logoContainer:{
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-  },
-  imagenLogo: {
-      width: 200, 
-      height: 200, 
-      resizeMode: 'contain', 
-  },
+    flexDirection: 'row',
+    flexWrap: 'wrap', 
+    justifyContent: 'space-between', 
+    marginTop: 4
+  }
 });
 
 export default Homepage;
